@@ -6,7 +6,7 @@ before_install:
   - docker build -t ahn94/react-test -f ./client/Dockerfile.dev ./client
 
 script:
-  - docker run -e CI=true USERNAME/react-test npm test
+  - docker run -e CI=true austnig94/react-test npm test
 
 after_success:
   - docker build -t austnig94/multi-client ./client
