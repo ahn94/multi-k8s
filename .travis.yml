@@ -21,7 +21,7 @@ after_success:
 
 deploy:
   provider: elasticbeanstalk
-  egion: us-east-2
+  region: us-east-2
   app: multi-docker
   env: MultiDocker-env
   bucket_name: elasticbeanstalk-us-east-2-595831816738
